@@ -1,7 +1,7 @@
 package org.demo;
 
-public class laptop {
-    void compiler(){
+public class laptop implements computer {
+   public void compiler(){
         System.out.println("laptop is portable");
     }
 }

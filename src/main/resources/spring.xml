@@ -5,13 +5,16 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- bean definitions here -->
 
+        <bean id="dev" class="org.demo.Dev" autowire="byName">
+          <!--  <property name="lap" ref="lap"/>  -->
+           <!-- <constructor-arg ref="des" /> -->
+        </bean>
 
-<bean id="dev" class="org.demo.Dev">
+        <bean id ="com1" class="org.demo.laptop" >
+        </bean>
 
-</bean>
-    <bean id ="lap" class="org.demo.laptop">
-    </bean>
+        <bean id ="com" class="org.demo.desktop" >
+        </bean>
 
 </beans>
